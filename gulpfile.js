@@ -14,6 +14,7 @@ global.$ = {
     rimraf: require('rimraf'),
     gp: require('gulp-load-plugins')(),
     browserSync: require('browser-sync').create(),
+    history: require('connect-history-api-fallback')
 };
 
 $.path.task.forEach(function(taskPath) {

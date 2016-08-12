@@ -8,6 +8,8 @@ html(lang="en" ng-app="app")
 
         
         //- Ui View
+        div(ng-include="'./templates/common/_header.html'")
         ui-view
-        
+        div(ng-include="'./templates/common/_footer.html'")
+
         include ./templates/common/_scripts

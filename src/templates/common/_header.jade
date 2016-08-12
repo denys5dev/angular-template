@@ -1,0 +1,6 @@
+.header.cf
+    ul.menu-items.cf
+        -var menu_items = {"Main" : "/", "About" : "about", "Contact" : "contact"}
+        each link_type, link_name in menu_items
+            li.menu-items_list
+                a(class="menu-items_link", ui-sref=link_type,  ui-sref-active="active")=link_name

@@ -1,4 +1,49 @@
-// .ng-cloak Styles
+// =================================
+// Vars
+// =================================
+$maicolor:#f15d58;
+$text-color: #363635;
+$secondry-color: #dcddcd;
+
+// =================================
+// ng-cloack
+// =================================
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
   display: none !important;
+}
+
+
+// =================================
+// Clearfix
+// =================================
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
+
+// =================================
+// Default Settings
+// =================================
+
+html, body{
+	min-width: 320px;
+	position: relative;
+	font-size: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: $maicolor;
+    height: 100%;
+}
+
+.active{
+    background-color: $text-color;
+    color: #fff;
 }
